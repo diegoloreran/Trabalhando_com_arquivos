@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Programa003 {
 	
-	//Versão que sobrecreve o arquivo
+	//Versão que acrescenta informações no arquivo
 	
 	public static void main(String[] args) {
 		
@@ -14,7 +14,7 @@ public class Programa003 {
 		
 		String path = "C:\\Users\\diego\\eclipse-workspace\\trabalhandocomarquivos\\saida.txt";
 		
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
 			for (String line : lines) {
 				bw.write(line);
 				bw.newLine();
