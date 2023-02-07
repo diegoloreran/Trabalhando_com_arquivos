@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Programa002 {
 	
-	//versão otimizada
+	//versão otimizada-correção
 	
 	public static void main(String[] args) {
 		
